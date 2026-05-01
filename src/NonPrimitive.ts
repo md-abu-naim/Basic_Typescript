@@ -68,4 +68,4 @@ const user3: {
     isMarrid: true
 }
 
-user3.isMarrid = false // its not possible
+// user3.isMarrid = false // its not possible
