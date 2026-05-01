@@ -13,7 +13,6 @@ let mixed: (number | string)[] = ['eggs', 45, 'milk', 2]
 mixed.push('orange', 12) // right
 
 
-
 // TS - tuple
 
 let coordinates: [number, number] = [11, 52]
@@ -25,3 +24,48 @@ let nameAndRole: [string, number] = ['Naim', 12]
 
 
 let destinations : [string, string, number] = ['Noakhali', 'Dhaka', 3]
+
+
+
+
+// Reference type: Object
+
+const user: {
+    firstName: string,
+    middleName: string,
+    lastName: string
+}  = {
+    firstName: 'Mohammad',
+    middleName: 'Abu',
+    lastName: 'Naim'
+}
+
+const user2: {
+    firstName: string,
+    middleName?: string, // optional type
+    lastName: string
+    isMarrid: boolean
+}  = {
+    firstName: 'Mohammad',
+    // middleName: 'Abu',
+    lastName: 'Naim',
+    isMarrid: true
+}
+
+user2.isMarrid = false
+console.log(user2);
+
+
+const user3: {
+    firstName: string,
+    middleName?: string, // optional type
+    lastName: string
+    readonly isMarrid: boolean // access modifire
+}  = {
+    firstName: 'Mohammad',
+    // middleName: 'Abu',
+    lastName: 'Naim',
+    isMarrid: true
+}
+
+user3.isMarrid = false // its not possible
